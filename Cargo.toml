@@ -1,0 +1,21 @@
+[workspace]
+members = ["clap-handler-derive"]
+
+[package]
+name = "clap-handler"
+version = "0.1.0"
+authors = ["Yesterday17 <mmf@mmf.moe>"]
+license = "MIT OR Apache-2.0"
+description = "A command handler works with `clap-derive` to generating subcommand handlers."
+repository = "https://github.com/ProjectAnni/clap-handler"
+edition = "2021"
+keywords = ["clap", "multi-level", "subcommand"]
+
+[dependencies]
+clap-handler-derive = { path = "./clap-handler-derive", version = "=0.1.0" }
+async-trait = { version = "0.1", optional = true }
+anyhow = "1.0"
+
+[features]
+default = []
+async = ["async-trait", "clap-handler-derive/async"]
