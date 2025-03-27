@@ -1,12 +1,12 @@
 [package]
 name = "clap-handler-derive"
-version = "0.1.0"
+version = "0.1.1"
 license = "MIT OR Apache-2.0"
 description = """
 A command handler works with `clap-derive` to generating subcommand handlers.
 """
 repository = "https://github.com/ProjectAnni/clap-handler"
-edition = "2021"
+edition = "2024"
 keywords = ["clap", "derive", "proc_macro"]
 
 [dependencies]
